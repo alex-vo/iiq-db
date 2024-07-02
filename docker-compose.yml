@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - ./create_identityiq_tables-8.3.mysql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
+
+#  tomcat:
+#    image: tomcat:9
+#    volumes:
+#      - ./webapps:/usr/local/tomcat/webapps
+#    ports:
+#      - "8080:8080"
