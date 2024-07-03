@@ -1,4 +1,4 @@
-download tomcat 9
+extract create_identityiq_tables-8.3.mysql to project root
 
 extract identityiq.war to webapps
 
