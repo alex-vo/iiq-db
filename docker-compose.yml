@@ -16,3 +16,5 @@ services:
 #      - ./webapps:/usr/local/tomcat/webapps
 #    ports:
 #      - "8080:8080"
+#    depends_on:
+#      - mysql
